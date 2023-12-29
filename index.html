@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariek Pateles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="img/Letras_logo.png" alt="Logo del Local">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Dónde Encontrarnos</a></li>
+            </ul>
+        </nav>
+        <div class="alert"></div>
+    </header>
+
+    <section id="nosotros">
+        <div class="nosotros-content">
+            <h2>Nuestra Historia</h2>
+            <p>Desde hace más de una década, en Ariek, nos enorgullece endulzar los momentos más especiales de tu vida con nuestros deliciosos pasteles y exquisitas pastas. Somos una empresa familiar con una rica tradición que se remonta a más de 10 años, construida sobre la pasión por la buena comida y el amor por compartir momentos inolvidables.
+
+                Nuestros productos son el resultado de recetas familiares cuidadosamente guardadas, transmitidas de generación en generación. Cada pastel y cada pasta que ofrecemos está impregnado con el calor de nuestro hogar y el esmero con el que preparamos cada ingrediente. En Ariek, no solo vendemos productos, sino que compartimos contigo un pedazo de nuestra historia y la dedicación que ponemos en cada creación.
+
+                La calidad es nuestra prioridad, y es por eso que utilizamos ingredientes frescos y de la más alta calidad. Cada pastel es horneado con amor y decorado con atención meticulosa a los detalles, creando obras maestras que deleitarán tu paladar y satisfarán tu deseo de lo auténticamente casero.
+
+                A lo largo de los años, hemos construido una sólida trayectoria basada en la confianza de nuestros clientes y su lealtad continua. En Ariek, no solo vendemos pasteles y pastas, sino que creamos experiencias memorables que forman parte de tus celebraciones más especiales.
+
+                Te invitamos a explorar nuestro mundo de sabores caseros, donde cada bocado cuenta una historia y cada pastel es una expresión de nuestro compromiso con la excelencia. Gracias por ser parte de nuestra familia en Ariek.
+
+                ¡Bienvenido a Ariek - Donde los momentos dulces se convierten en recuerdos eternos!</p>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="producto">
+            <img src="img/fideos.jpeg" alt="fideos">
+            <h3>FIDEOS</h3>
+            <button onclick="agregarAlCarrito('FIDEOS')">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/sorrentinos.jpeg" alt="sorrentinos">
+            <h3>SORRENTINOS</h3>
+            <button onclick="agregarAlCarrito('SORRENTINOS')">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/pastelitos.jpeg" alt="pastelitos">
+            <h3>PASTELITOS</h3>
+            <button onclick="agregarAlCarrito('PASTELIROS')">Agregar al Carrito</button>
+        </div>
+
+        <!-- Agrega más productos aquí según sea necesario -->
+    </section>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <div class="redes-sociales">
+            <a href="https://wa.me/+5492915776978" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/ariekpasteles_/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/tufacebook" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+
+        <div class="ubicacion">
+            <h3>Ubicación</h3>
+            <p>¡Visítanos en nuestra tienda!</p>
+
+            <!-- Aquí puedes incorporar un mapa usando servicios como Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12315.206676049456!2d-62.673611099999995!3d-39.4963928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f2194db6f8ec99%3A0xb1dbbd9458d64aa2!2sAriek!5e0!3m2!1ses-419!2sar!4v1701355598600!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Teléfono: (291) 5735828</p>
+            <p>Email: erikrossio2015@gmail.com</p>
+        </div>
+    
+        <div class="redes-sociales-footer">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.instagram.com/erikrossio/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/RossioErik" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <p>© 2023 EGR PROD</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+* {
+    font-family: 'Kalam', cursive;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+        margin: 0;
+        background-image: url('img/fondo.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+        background-size: cover;
+}
+
+#main-header {
+    background-color: #000000e1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección de la disposición a columna */
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s; /* Agregamos una transición para suavizar el cambio */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+}
+
+.logo img {
+    max-width: 100%;
+    height: 200px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px; /* Agregamos un margen inferior entre la lista y la parte inferior del header */
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #5c5c5c;
+    color: #fff;
+}
+
+#nosotros {
+    background-color: #00000081; /* Cambia el color de fondo según tus preferencias */
+    padding: 50px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.nosotros-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nosotros-content h2 {
+    color: #ffffff;
+}
+
+.nosotros-content p {
+    color: #ffffff;
+    font-size: 18px; /* Tamaño de fuente más grande */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 15px; /* Margen inferior para separar los párrafos */
+}
+#productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    margin-top: 200px;
+}
+
+.producto {
+    background-color: #ffffff7c;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 75px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#carrito {
+    background-color: #ffffff7c;
+    border-radius: 5px;
+    padding: 10px; /* Se redujo el padding para hacer el carrito más pequeño */
+    margin: 20px auto; /* Se utilizó 'auto' para centrar horizontalmente el carrito */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Se estableció un ancho máximo para limitar el tamaño del carrito */
+}
+
+#carrito h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#lista-carrito li {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #774cafb9;
+    color: white;
+    padding: 8px 15px; /* Se ajustó el padding para hacer los botones más pequeños */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Se ajustó el tamaño de la fuente */
+}
+
+button:hover {
+    background-color: #5800aa;
+}
+
+.eliminar-btn {
+    background-color: #ff6961;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px; /* Añadimos un pequeño margen izquierdo entre los botones */
+}
+
+.eliminar-btn:hover {
+    background-color: #e65a4f;
+}
+
+
+#contacto {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #ffffff81;
+    margin-top: 200px;
+}
+
+.ubicacion {
+    margin-top: 20px;
+}
+
+/* Estilos adicionales para mejorar la apariencia del mapa, puedes ajustar según sea necesario */
+iframe {
+    width: 30%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para los íconos de redes sociales */
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 40px; /* Tamaño de fuente más grande */
+    color: #000000; /* Color azul de Facebook */
+    transition: transform 0.3s, color 0.3s; /* Agregamos una transición para el movimiento y el cambio de color */
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.2); /* Hacemos un aumento del 20% al pasar el mouse */
+    color: rgb(139, 32, 125); /* Cambiamos el color al pasar el mouse */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Alinea los elementos con espacio alrededor */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+}
+
+.contacto, .redes-sociales-footer{
+    width: 30%; /* Establece un ancho fijo para cada sección */
+}
+
+.contacto h3, .redes-sociales-footer h3{
+    color: rgb(145, 8, 236);
+}
+
+.contacto p, .redes-sociales-footer a, .creditos p {
+    margin: 5px 0;
+}
+
+.redes-sociales-footer a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.redes-sociales-footer a:hover {
+    transform: scale(1.2);
+    color: rgb(123, 6, 201);
+}
+
+.alert {
+    display: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+/* Estilos para pantallas más pequeñas (móviles) */
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 5px; /* Ajusta el padding del encabezado para pantallas más pequeñas */
+    }
+
+    .logo img {
+        height: 80px; /* Ajusta la altura del logo para pantallas más pequeñas */
+    }
+
+    nav ul {
+        padding-right: 10px; /* Ajusta el padding del menú de navegación para pantallas más pequeñas */
+    }
+
+    nav li {
+        margin-left: 10px; /* Ajusta el margen izquierdo de los elementos del menú para pantallas más pequeñas */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Ajusta el padding de los enlaces del menú para pantallas más pequeñas */
+    }
+
+    #nosotros {
+        padding: 20px; /* Ajusta el padding de la sección Nosotros para pantallas más pequeñas */
+        margin-top: 200px; /* Ajusta el margen superior de la sección Nosotros para pantallas más pequeñas */
+    }
+
+    .nosotros-content img {
+        max-width: 100%; /* Ajusta el ancho máximo de las imágenes en la sección Nosotros para pantallas más pequeñas */
+    }
+
+    #productos {
+        margin-top: 100px; /* Ajusta el margen superior de la sección Productos para pantallas más pequeñas */
+    }
+
+    .producto {
+        width: 100%; /* Ajusta el ancho de los productos para ocupar todo el ancho disponible en pantallas más pequeñas */
+    }
+
+    #carrito {
+        max-width: 100%; /* Ajusta el ancho máximo del carrito para pantallas más pequeñas */
+    }
+
+    #lista-carrito {
+        padding-left: 10px; /* Ajusta el padding izquierdo de la lista de productos del carrito para pantallas más pequeñas */
+    }
+
+    button {
+        font-size: 12px; /* Ajusta el tamaño de fuente de los botones para pantallas más pequeñas */
+    }
+
+    #contacto {
+        padding: 10px; /* Ajusta el padding de la sección Contacto para pantallas más pequeñas */
+    }
+
+    .redes-sociales a {
+        margin: 0 5px; /* Ajusta el margen de los enlaces de redes sociales para pantallas más pequeñas */
+    }
+
+    .ubicacion iframe {
+        width: 100%; /* Ajusta el ancho del mapa para ocupar todo el ancho disponible en pantallas más pequeñas */
+    }
+}
